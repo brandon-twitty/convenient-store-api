@@ -45,13 +45,6 @@ functions:
           path: create-convenience-store/{ID}
           method: POST
           cors: true
-  getConvenienceStore:
-    handler: lambdas/endpoints/getConvenienceStore.get
-    events:
-      - http:
-          path: get-convenience-store/{ID}
-          method: get
-          cors: true
   viewStoresByOwnerId:
     handler: lambdas/endpoints/ownersApi.handler
     events:
